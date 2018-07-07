@@ -1,21 +1,23 @@
 <!--Conexão com banco de dados-->
 <?php
-$link = mysqli_connect('localhost', 'root', '', 'prePovadb');
+$host = 'localhost';
+$porta = 3306;
+$usuario = 'root';
+$senha = '';
+$dbNome = 'prePovadb';
  
-if (!$link) {
-    echo "Error: Falha ao conectar-se com o banco de dados MySQL." . PHP_EOL;
-    echo "Debugging errno: " . mysqli_connect_errno() . PHP_EOL;
-    echo "Debugging error: " . mysqli_connect_error() . PHP_EOL;
-    exit;
-}
  
-echo "Sucesso: Sucesso ao conectar-se com a base de dados MySQL." . PHP_EOL;
+$pdo = new PDO("mysql:host=$host:$porta;
+                   dbname=$dbNome;charset=latin1",
+                   $usuario, $senha);
  
-mysqli_close($link);
-?>
-
-
-
-
-
+ 
+$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+ 
+$totalRegistrosInseridos = $pdo->exec(
+   "INSERT INTO Contatos(Nome, Endereco, Email, Data_Nascimento)
+             VALUES('?', '?', '?', '?');"
+           );
+ 
+echo 'Total registros inseridos: ' . $totalRegistrosInseridos;
 
