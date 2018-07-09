@@ -1,5 +1,4 @@
 <?php
-require_once 'conexao.php';
 require_once 'functions.php';
 // abre a conexão
 // SQL para contar o total de registros
@@ -47,6 +46,10 @@ $stmt->execute();
                         <td><?php echo $contatos['Endereco'] ?></td>
                         <td><?php echo $contatos['Email'] ?></td>
                         <td><?php echo dateConvert($contatos['Data_Nascimento']) ?></td>
+                        <td>
+                            <a href="edit.php?Id=<?php echo $contatos['Id'] ?>">Editar</a>
+                            <a href="del.php?Id=<?php echo $contatos['Id'] ?>" onclick="return confirm('Tem certeza de que deseja remover?');">Remover</a>
+                        </td>
                     </tr>
                 <?php endwhile; ?>
             </tbody>
@@ -66,6 +69,6 @@ $stmt->execute();
         <p><a href="del.php">Deletar contato</a></p>
         <br>
         <p><a href="index.php">Home</a></p>
-        
+
     </body>
 </html>
