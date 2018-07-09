@@ -64,9 +64,7 @@ $stmt->execute();
 
         <?php endif; ?>
 
-        <p><a href="updateContatos.php">Alterar contato</a></p>
-        <br>
-        <p><a href="del.php">Deletar contato</a></p>
+    
         <br>
         <p><a href="index.php">Home</a></p>
 

@@ -45,24 +45,24 @@ if (!is_array($contatos))
         <form action="edit.php" method="post">
             <label for="Nome">Nome: </label>
             <br>
-            <input type="text" name="Nome" id="Nome"value="<?php echo $contatos['Nome'] ?>">
+            <input type="text" name="nome" id="nome"value="<?php echo $contatos['Nome'] ?>">
             <br><br>
  
             <label for="Endereco">Endereço: </label>
             <br>
-            <input type="text" name="Endereco" id="Endereco"value="<?php echo $contatos['Endereco'] ?>">
+            <input type="text" name="endereco" id="adress"value="<?php echo $contatos['Endereco'] ?>">
  
             <br><br>
 
             <label for="Email">Email: </label>
             <br>
-            <input type="text" name="Email" id="Email"value="<?php echo $contatos['Email'] ?>">
+            <input type="text" name="email" id="mail"value="<?php echo $contatos['Email'] ?>">
  
             <br><br>
              
-            <label for="Data_Nascimento">Data de Nascimento: </label>
+            <label for="nasData">Data de Nascimento: </label>
             <br>
-            <input type="text" name="Data_Nascimento" id="Data_Nascimento" placeholder="dd/mm/YYYY" value="<?php echo dateConvert($contatos['Data_Nascimento']) ?>">
+            <input type="date" name="data" id="date" />
  
             <input type="hidden" name="Id" value="<?php echo $Id ?>">
             <br><br>
