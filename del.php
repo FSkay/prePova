@@ -1,6 +1,6 @@
 <?php
 
-require_once 'functions.php';
+require_once 'conexao.php';
 
 // pega o ID da URL
 $Id = isset($_GET['Id']) ? $_GET['Id'] : null;

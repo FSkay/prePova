@@ -1,5 +1,5 @@
 <?php
-require_once 'functions.php';
+require_once 'conexao.php';
 // abre a conexão
 // SQL para contar o total de registros
 // A biblioteca PDO possui o método rowCount(), mas ele pode ser impreciso.
@@ -47,7 +47,7 @@ $stmt->execute();
                         <td><?php echo $contatos['Email'] ?></td>
                         <td><?php echo dateConvert($contatos['Data_Nascimento']) ?></td>
                         <td>
-                            <a href="edit.php?Id=<?php echo $contatos['Id'] ?>">Editar</a>
+                            <a href="editar.php?Id=<?php echo $contatos['Id'] ?>">Editar</a>
                             <a href="del.php?Id=<?php echo $contatos['Id'] ?>" onclick="return confirm('Tem certeza de que deseja remover?');">Remover</a>
                         </td>
                     </tr>

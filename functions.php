@@ -1,5 +1,4 @@
 <?php
-
 function db_connect() {
     $connection = new PDO("mysql:host=$hostname;dbname=$database", $username, $password);
 
