@@ -10,9 +10,7 @@
 
         <h2>Cadastro de Contatos</h2>
         <!--O atributo action define o local (uma URL) em que os dados recolhidos do formulário devem ser enviados.-->
-        <form action="/conexao.php" method="post">
-
-
+        <form action="/recebeDados.php" method="post">
             <label for="nome">Nome:</label>
             <input type="text" name="nome" id="nome" />
             <br><br>
@@ -27,7 +25,7 @@
             <input type="date" name="data" id="date" />
             <br><br>
             <div class="button">
-                <input type="submit" value="Submit" name="submit">
+                <input type="submit" value="Enviar" name="submit">
             </div>
         </form>
     </body>

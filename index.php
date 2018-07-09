@@ -1,17 +1,17 @@
-<!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
+<!doctype html>
 <html>
     <head>
-        <meta charset="UTF-8">
-        <title></title>
+        <meta charset="utf-8">
+ 
+    <title>Sistema de Cadastro Contatos</title></center>
     </head>
+ 
     <body>
-        <?php
-        // put your code here
-        ?>
+         
+        <h1>Sistema de Cadastro Contatos</h1>
+         
+        <p><a href="Ex1.php">Adicionar Contatos</a></p>
+        <br>
+        <p><a href="lista.php">Listar Contatos Cadastrados</a></p>
     </body>
 </html>
