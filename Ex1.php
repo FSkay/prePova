@@ -26,7 +26,7 @@
             <br><br>
             <div class="button">
                 <input type="submit" value="Enviar" name="submit">
-            </div>
+            </div>          
         </form>
     </body>
 </html>

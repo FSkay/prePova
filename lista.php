@@ -12,12 +12,12 @@ $sql_count = "SELECT COUNT(*) AS total FROM contatos ORDER BY Id ASC";
 $sql = "SELECT Id, Nome, Endereco, Email, Data_Nascimento FROM contatos ORDER BY Id ASC";
 
 // conta o total de registros
-$stmt_count = $PDO->prepare($sql_count);
+$stmt_count = $connection->prepare($sql_count);
 $stmt_count->execute();
 $total = $stmt_count->fetchColumn();
 
 // seleciona os registros
-$stmt = $PDO->prepare($sql);
+$stmt = $connection->prepare($sql);
 $stmt->execute();
 ?>
 <html>
@@ -60,6 +60,15 @@ $stmt->execute();
             <p>Nenhum usuário registrado</p>
 
         <?php endif; ?>
-
+            
+        <div class="button">
+            <input a href="lista.php" type="button" value="Alterar" name="button">
+        </div> 
+        <div class="button">
+            <input a href="lista.php" type="button" value="Deletar" name="button">
+        </div> 
+        <div class="button">
+            <input a href="index.php" type="button" value="Voltar" name="button">
+        </div> 
     </body>
 </html>

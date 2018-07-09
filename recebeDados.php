@@ -1,30 +1,4 @@
 <?php
-/*
-$valor = '$nome';
-if(is_string($valor)):
-    echo 'É do tipo String.';
-else:
-    echo 'Não é do tipo String.';
-endif;  
-
-$valor = 'email';
-if(filter_var($valor, FILTER_VALIDATE_EMAIL)):
-    echo 'E-mail válido.';
-else:
-    echo 'E-mail inválido.';
-endif; 
-
-/*$valor = 'data';
-$arraData = explode('/', $valor);
-*/
-/*if(checkdate($arraData[1], $arraData[0], $arraData[2])):
-    echo 'Data válida.';
-else:
-    echo 'Data inválida.';
-endif; 
-*/
-?>
-<?php
 require_once 'conexao.php';
 
 if (isset($_POST['nome'])) {
@@ -48,6 +22,8 @@ if (isset($_POST['nome'])) {
 <html>
     <body>
     Dados enviado com sucesso!
+    <br>
+    
     </body>
 </html>
 

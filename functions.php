@@ -18,4 +18,3 @@ function dateConvert($date)
  
     return false;
 }
-?>
