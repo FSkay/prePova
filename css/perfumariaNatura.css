@@ -1,0 +1,26 @@
+a:link{
+    background: #B1B1B1;
+    color: #FFF;
+    text-decoration: none;
+    font-weight: bold;
+    border-width: 4px;
+    border-style: solid;
+}
+a:hover {
+    text-decoration: underline overline; 
+    color:#f00;
+    height: 10px;
+    width: 20px;
+}
+a:visited{
+    color: pink;
+}
+h1{
+    text-align: center;
+    background-color: black;
+    color: white;
+    height: 100px;
+}
+body{
+
+}

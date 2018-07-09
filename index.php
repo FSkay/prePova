@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-
+        <link rel="stylesheet" type="text/css" href="css/perfumariaNatura.css">
         <title>Sistema de Cadastro Contatos</title></center>
 </head>
 
@@ -10,14 +10,11 @@
 
     <h1>Sistema de Cadastro Contatos</h1>
 
-    <div class="button">
-        <input a href="index.php" type="button" value="Cadastrar" name="button">
-    </div> 
+    <p><a href="Ex1.php"</a>Cadastrar contato</p>
     <br>
-    <br>
-    <div class="button">
-        <input a href="lista.php" type="button" value="Lista de contatos" name="button">
-    </div> 
+    <p><a href="lista.php"</a>Listar contatos</p>
+
+
 
 </body>
 </html>

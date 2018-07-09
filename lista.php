@@ -60,15 +60,12 @@ $stmt->execute();
             <p>Nenhum usuário registrado</p>
 
         <?php endif; ?>
-            
-        <div class="button">
-            <input a href="lista.php" type="button" value="Alterar" name="button">
-        </div> 
-        <div class="button">
-            <input a href="lista.php" type="button" value="Deletar" name="button">
-        </div> 
-        <div class="button">
-            <input a href="index.php" type="button" value="Voltar" name="button">
-        </div> 
+
+        <p><a href="updateContatos.php">Alterar contato</a></p>
+        <br>
+        <p><a href="del.php">Deletar contato</a></p>
+        <br>
+        <p><a href="index.php">Home</a></p>
+        
     </body>
 </html>
